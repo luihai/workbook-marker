@@ -1,0 +1,23 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_PRISMA_URL") // Uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // Uses direct connection
+}
+
+model ProgressLog {
+  id           Int      @id @default(autoincrement())
+  date         DateTime @default(now())
+  subject      String
+  topic        String?
+  score        String?   // Could be "8/10" or "80%" or just a number string
+  mistakes     String?   // storing as text or JSON string for now
+  fixStrategy  String?
+  nextDrill    String?
+}

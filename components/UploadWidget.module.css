@@ -1,0 +1,71 @@
+.widget {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.uploadArea {
+    position: relative;
+}
+
+.fileInput {
+    display: none;
+}
+
+.dropZone {
+    border: 2px dashed #d1d5db;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9fafb;
+    transition: border-color 0.2s;
+    touch-action: manipulation;
+    min-height: 120px;
+    /* Easy to tap */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropZone:hover {
+    border-color: var(--primary-color);
+}
+
+.previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.previewContainer {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clearBtn {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.5rem 1rem;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}

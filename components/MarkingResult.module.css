@@ -1,0 +1,31 @@
+.container {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.markdown p {
+    margin-bottom: 1rem;
+}
+
+.markdown ul,
+.markdown ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.markdown strong {
+    color: var(--text-color);
+}
